@@ -16,3 +16,5 @@ app.use(bodyParser.json());
 app.use(express.static('../client/build'));
 
 app.use('/api', AppRouter);
+
+console.log("App is now listening on " + port);
