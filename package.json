@@ -9,7 +9,9 @@
     "start": "concurrently 'npm:start:server' 'npm:start:client'",
     "install:client": "cd client && npm i",
     "install:server": "cd server && npm i",
-    "install": "concurrently 'npm:install:server' 'npm:install:client'"
+    "install": "concurrently 'npm:install:server' 'npm:install:client'",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:client"
   },
   "author": "",
   "license": "ISC",
