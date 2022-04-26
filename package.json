@@ -1,0 +1,19 @@
+{
+  "name": "nc-shop-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start": "concurrently 'npm:start:server' 'npm:start:client'",
+    "install:client": "cd client && npm i",
+    "install:server": "cd server && npm i",
+    "install": "concurrently 'npm:install:server' 'npm:install:client'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
